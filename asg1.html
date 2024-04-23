@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Blog Post</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Python Assignment 1</h2>
+        <p>Below are questions followed by Python programs along with their outputs:</p>
+
+
+        <!-- Add remaining questions and programs similarly -->
+        <!-- Program 1 -->
+        <p class="question">Question 1: Write a program that asks the user for his name and then greet him using “Hello!!!”.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 1: 
+name = input("Enter your name :")
+print("Hello "+name)
+</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter your name :Nishant
+Hello Nishant</pre>
+        </div>
+
+        <!-- Program 2 -->
+        <p class="question">Question 2: Write a program that prompts the user to enter two integers and display the total on the screen.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 2: 
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+print("There sum is : " + str(a+b))
+</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter first number : 2
+Enter second number : 3
+There sum is : 5
+    </pre>
+        </div>
+
+        <!-- Program 3 -->
+        <p class="question">Question 3: Write a program which accept principle, rate and time from user and print the simple interest</p>
+        <div class="code-box">
+            <pre><code># Program 3: 
+p = int(input("Enter principle ammount :"))
+r = float(input("Enter rate of intrest :"))
+t = int(input("Enter time (years) :"))
+print("Your intrest is : "+ str((p*r*t)/100))</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter principle ammount :5000
+Enter rate of intrest :6
+Enter time (years) :3
+Your intrest is : 900.0
+    </pre>
+        </div>
+
+        <!-- Program 4 -->
+        <p class="question">Question 4: Write a program that prompts the user to enter number in two variables and swap the contents of
+            the variables using third variable.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 4: 
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+print("Value of a & b before swapping : "+str(a)+","+str(b))
+temp = a
+a=b
+b=temp
+print("Value of a & b after swapping : "+str(a)+","+str(b))</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter first number : 50
+Enter second number : 60
+Value of a & b before swapping : 50,60
+Value of a & b after swapping : 60,50</pre>
+        </div>
+
+        <!-- Program 5 -->
+        <p class="question">Question 5: Write a program that prompts the user to enter number in two variables and swap the contents of
+            the variables without using third variable.</p>
+        <div class="code-box">
+            <pre><code># Program 5: 
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+print("Value of a & b before swapping : "+str(a)+","+str(b))
+a = a+b
+b = a-b
+a = a-b
+print("Value of a & b after swapping : "+str(a)+","+str(b))</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter first number : 3
+Enter second number : 2
+Value of a & b before swapping : 3,2
+Value of a & b after swapping : 2,3</pre>
+        </div>
+
+        <!-- Program 6 -->
+        <p class="question">Question 6: Write a program that prompts the user to input values and calculate the area of circle and
+            rectangle</p>
+        <div class="code-box">
+            <pre><code># Program 6: 
+r = int(input("Enter radius of circle : "))
+print("Area of circle is : "+str(3.14159*r*r))
+
+l = float(input("Enter length of rectangle : "))
+b = float(input("Enter bredth of rectangle : "))
+print("Area of rectangle is "+str(l*b))</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter radius of circle : 6
+Area of circle is : 113.09723999999999
+Enter length of rectangle : 3
+Enter bredth of rectangle : 6
+Area of rectangle is 18.0</pre>
+        </div>
+
+        <!-- Program 7 -->
+        <p class="question">Question 7: Write a program that prompts the user to input a number and display if the number is even or odd
+        </p>
+        <div class="code-box">
+            <pre><code># Program 7: 
+k = int(input("Enter a number : "))
+if(k%2==0):
+    print("Number is even")
+else:
+    print("Number is odd")
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a number : 6
+Number is even</pre>
+        </div>
+
+        <!-- Program 8 -->
+        <p class="question">Question 8: Write a program that prompts the user to input three integers and outputs the largest.</p>
+        <div class="code-box">
+            <pre><code># Program 8: 
+a = int(input("Enter first number(A) : "))
+b = int(input("Enter second number(B) : "))
+c = int(input("Enter third number(C) : "))
+if(a>b and a>c):
+    print("A is largest")
+elif(b>a and b>c):
+    print("B is largest")
+else:
+    print("C is largest")</code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter first number(A) : 1
+Enter second number(B) : 2
+Enter third number(C) : 3
+C is largest</pre>
+        </div>
+
+        <!-- Program 9 -->
+        <p class="question">Question 9: Write a program that prompts the user to input a year and determine whether the year is a leap
+            year or not.</p>
+        <div class="code-box">
+            <pre><code># Program 9: 
+year = int(input("Enter a year : "))
+if(year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a year : 2004
+Leap year</pre>
+        </div>
+
+        <!-- Program 10 -->
+        <p class="question">Question 10: The marks obtained by a student in 3 different subjects are input by the user. Your program
+            should calculate the average of subjects and display the grade. The student gets a grade as per the
+            following rules:
+        <pre>
+Average 	Grade
+90-100  	A
+80-89		B
+70-79		C
+60-69		D
+0-59		F</pre>
+        </p>
+        <div class="code-box">
+            <pre><code># Program 10: 
+sub1 = int(input("Enter marks of first subject : "))
+sub2 = int(input("Enter marks of second subject : "))
+sub3 = int(input("Enter marks of third subject : "))
+avg = (sub1+sub2+sub3)/3
+
+if(avg>=90):
+    print("Grade A")
+elif(avg>=80):
+    print("Grade B")
+elif(avg>=70):
+    print("Grade C")
+elif(avg>=60):
+    print("Grade D")
+else:
+    print("Grade F")
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter marks of first subject : 50
+Enter marks of second subject : 50
+Enter marks of third subject : 90
+Grade D</pre>
+        </div>
+
+        <!-- Program 11 -->
+        <p class="question">Question 11: Write a program that prompts the user to input a character and determine the character is vowel
+            or consonant (using logical operator).e</p>
+        <div class="code-box">
+            <pre><code># Program 11: 
+char = input("Enter a alphabet : ").lower()
+
+if(char == "a" or char == "e"or char == "i"or char == "o"or char == "u"):
+    print("vowel")
+elif(len(char)!=1): 
+    print("Enter a single alphabet")
+else:
+    print("consonant")
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a alphabet : o
+vowel</pre>
+        </div>
+
+        <!-- Program 12 -->
+        <p class="question">Question 12: Write a program to print numbers from 1 to 10 except 5</p>
+        <div class="code-box">
+            <pre><code># Program 12: 
+for i in range(1,11):
+    if(i==5):
+        continue
+    print(i)
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+1
+2
+3
+4
+6
+7
+8
+9
+10</pre>
+        </div>
+
+        <!-- Program 13 -->
+        <p class="question">Question 13: Write a program to sum of N positive even numbers from 2 to 20 using while loop.</p>
+        <div class="code-box">
+            <pre><code># Program 13: 
+i = 2
+sum_even = 0
+while (i <= 20):
+    sum_even += i
+    i += 2
+print("Sum of even numbers from 2 to 20:", sum_even)
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>Sum of even numbers from 2 to 20: 110</pre>
+        </div>
+
+        <!-- Program 14 -->
+        <p class="question">Question 14: Write a program that prompts the user to input a number and prints its multiplication table
+            using for loop.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 14: 
+a = int(input("Enter a number : "))
+for i in range(1,11):
+    print(a*i)
+
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a number : 6
+6
+12
+18
+24
+30
+36
+42
+48
+54
+60</pre>
+        </div>
+
+        <!-- Program 15 -->
+        <p class="question">Question 15: Write a program to demonstrate exponential operator.</p>
+        <div class="code-box">
+            <pre><code># Program 15: 
+a = int(input("Enter a number : "))
+b = int(input("Enter it's power : "))
+print("value of ",a," to the power ",b, " is : ",a**b)
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a number : 2
+Enter it's power : 3
+value of  2  to the power  3  is :  8</pre>
+        </div>
+
+        <!-- Program 16 -->
+        <p class="question">Question 16: Write a program that prompts the user to input anumber and reverse its digits using while loop.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 16: 
+num = int(input("Enter a number : "))
+revNum = 0
+while(num!=0):
+    temp = num%10
+    revNum= revNum*10 + temp
+    num//= 10
+print("Reversed number is : ",revNum)
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a number : 679
+Reversed number is :  976</pre>
+        </div>
+
+        <!-- Program 17 -->
+        <p class="question">Question 17: Write a program that prompts the user to input a decimal integer and display its binary
+            equivalent.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 17: 
+decimal_num = int(input("Enter a decimal integer: "))
+binary_num = ""
+
+if decimal_num == 0:
+    binary_num = "0"
+else:
+    while decimal_num > 0:
+        remainder = decimal_num % 2
+        binary_num = str(remainder) + binary_num
+        decimal_num //= 2
+
+print("The binary equivalent is:", binary_num)
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a decimal integer: 15
+The binary equivalent is: 1111</pre>
+        </div>
+
+        <!-- Program 18 -->
+        <p class="question">Question 18:
+            Write a program to find all Armstrong number in the range of 0 and 99.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 18: 
+for num in range(0, 100):
+num_str = str(num)
+num_digits = len(num_str)
+sum_of_digits = 0
+
+for digit_char in num_str:
+    digit = int(digit_char)
+    sum_of_digits += digit ** num_digits
+
+if sum_of_digits == num:
+    print(num, end=" ")
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>0 1 2 3 4 5 6 7 8 9</pre>
+        </div>
+
+        <!-- Program 19 -->
+        <p class="question">
+        Question 19: Write programs to print following patterns :<pre>
+    1.)
+        * 
+       * * 
+      * * * 
+     * * * * 
+    * * * * * 
+    2.)
+    1
+    22
+    333
+    4444
+    55555
+</pre>
+        </p>
+        <div class="code-box">
+            <pre><code># Program 19: 
+def print_pyramid(n):
+    for i in range(1, n + 1):
+        for j in range(n - i):
+            print(" ", end="")
+        for k in range(i):
+            print("* ", end="")
+        print()
+
+def print_triangle(n):
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(i, end="")
+        print()
+
+
+print_pyramid(5)
+print_triangle(5)
+
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+ 1
+ 22
+ 333
+ 4444
+ 55555</pre>
+        </div>
+
+        <!-- Program 20 -->
+        <p class="question">Question 20: Write a program to print square root of a given number using Lamda function.
+        </p>
+        <div class="code-box">
+            <pre><code># Program 20: 
+square_root = lambda x: x ** 0.5
+num = float(input("Enter a number: "))
+result = square_root(num)
+print("Square root of", num, "is:", result)
+
+    </code></pre>
+        </div>
+        <div class="output-box">
+            <p>Output:</p>
+            <pre>
+Enter a number: 25
+Square root of 25.0 is: 5.0</pre>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

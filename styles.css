@@ -1,0 +1,129 @@
+/* styles.css */
+
+/* Body */
+h2{
+    color: #fff;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B4A7D6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #594199;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Code Box */
+.code-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    overflow-x: auto; /* Add horizontal scrollbar */
+    white-space: nowrap; /* Prevent wrapping of long lines */
+    border-radius: 8px;
+}
+
+/* Pre */
+/* pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+} */
+
+/* Output Box */
+.output-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #f0f0f0;
+    overflow-x: auto; /* Add horizontal scrollbar */
+    border-radius: 8px;
+}
+
+
+/* Question */
+p.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ebebeb; /* Dark gray */
+}
+
+/* Example Links */
+a {
+    color: #007bff; /* Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.btn {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Alert */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-info {
+    background-color: #d1ecf1; /* Light blue */
+    border-color: #bee5eb; /* Lighter blue */
+    color: #0c5460; /* Darker blue */
+}
+
+.alert-info a {
+    color: #0c5460; /* Darker blue */
+    font-weight: bold;
+}
+
+/* Center the content */
+.center {
+    text-align: center;
+}
+
+/* styles.css */
+
+/* Copy Button */
+/* styles.css */
+
+/* Copy Button */
+.copy-btn {
+    background-color: #594199; /* Match the background color of the container */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    align-self: flex-end; /* Align button to the end of the flex container */
+}
+
+.copy-btn:hover {
+    background-color: #483877; /* Darker shade of the container background color */
+}
